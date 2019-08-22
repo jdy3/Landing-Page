@@ -18,6 +18,7 @@ body {
   left: 0px;
   right: 0px;
   background: rgba(250, 165, 10, 0.97);
+  display: none;
 }
 
 #header {
@@ -39,15 +40,18 @@ h1 {
 
 #nav-bar {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(3, auto);
   align-items: end;
-}
+  justify-items: center;
+  grid-gap: 1em;
+  padding-right: 1em;
+  padding-bottom: 0.5em;
+  }
 
 .nav-link {
   color: rgb(255, 255, 255);
-  font-size: 1.2em;
-  padding: 0.65em;
-}
+  font-size: 1.4em;
+  }
 
 .nav-link:hover {
   color: rgb(0, 0, 255);
@@ -60,14 +64,6 @@ h1 {
   color: rgb(255, 255, 255);
 }
 
-#form {
-  padding-right: 15.39em;
-  padding-left: 18.4em;
-  margin-left: -1.5em;
-  margin-right: 1.6em;
-  margin-top: 2.4em;
-}
-
 .input-field {
   height: 2em;
   width: 15em;
@@ -76,6 +72,7 @@ h1 {
 }
 
 #submit {
+  margin-top: 1em;
   height: 2.2em;
   width: 5em;
   background: rgb(10, 0, 130);
@@ -101,19 +98,12 @@ iframe {
     width: 100%;
   }
 
+
 #boxes {
   height: 15em;
   display: flex;
   justify-content: space-around;
-  padding-top: 1em
-}
-
-.feat-link {
-  color: rgb(255, 255, 255);
-}
-
-.feat-link:hover {
-  color: rgb(0, 0, 255);
+  padding-top: 1em;
 }
 
 #community-assets {
@@ -138,6 +128,10 @@ iframe {
   width: 20em;
   border: 0.15em solid rgb(250, 165, 10);
   border-radius: 5%;
+}
+
+.feat-link :hover {
+ color: rgb(0, 0, 255);
 }
 
 #how {
