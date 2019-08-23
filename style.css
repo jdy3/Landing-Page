@@ -97,6 +97,9 @@ iframe {
     width: 100%;
   }
 
+#features {
+  padding-top: 2em;
+}
 
 #boxes {
   height: 15em;
@@ -218,4 +221,12 @@ p {
   p {
     font-size: 2em;
   }
+}
+
+#how {
+  padding-top: 5em;
+}
+
+#buddy {
+  padding-top: 1em;
 }
